@@ -1,63 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sheen E-Portfolio</title>
-
+    <title>Sheen E-Portfolio | Sheen Frances C. Magdayao</title>
 
     <!-- Connection 1: External CSS Link -->
     <link rel="stylesheet" href="style.css">
-
 
     <!-- Connection 2: External JavaScript Link -->
     <script src="script.js" defer></script>
 </head>
 
-
 <body>
 
-
+    <!-- Header & Navigation -->
     <header>
         <nav>
-            <h2>Sheen Frances C. Magdayao </h2>
-            <!-- Dynamic Target 1: Dark Mode Toggle -->
-            <button id="theme-btn">Toggle Dark Mode</button>
+            <div class="logo">
+                <a href="#">Sheen Frances C. Magdayao</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-btn" aria-label="Toggle dark mode">Toggle Theme</button>
         </nav>
     </header>
 
-
     <main>
-        <section id="hero">
-            <h1>Avisala to My Portfolio</h1>
-            <p>1st Year Information Technology Student</p>
-        </section>
-
-
-        <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="card">
-                <h3>Web Integration Lab</h3>
-                <p>A demonstration of linking HTML, CSS, and JS.</p>
+        <!-- Hero / About Section -->
+        <section id="about" class="hero">
+            <div class="hero-profile-container">
+                <!-- Text Avatar (No image needed!) -->
+                <div class="avatar-circle">
+                    <span>SM</span>
+                </div>
+                <div class="hero-content">
+                    <span class="badge">BSIT-1A</span>
+                    <h1>Sheen Frances C. Magdayao</h1>
+                    <p class="subtitle">Welcome to my e-portfolio! I am a 1st-year Information Technology student exploring web design, software development, and digital technology.</p>
+                </div>
             </div>
         </section>
 
+        <!-- Projects Section (Visual Grid) -->
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <!-- Dynamic Target 2: Interactive Alert Button -->
-            <button id="contact-btn">Get in Touch</button>
+                <!-- CARD 1 -->
+                <article class="project-card">
+                    <div class="card-image-placeholder">Project Visual 1</div>
+                    <div class="card-content">
+                        <h3>Web Development Basics</h3>
+                        <p>A collection of front-end layouts and exercises built with plain HTML, CSS, and JS.</p>
+                        <a href="#" class="project-link">View Details &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- CARD 2 -->
+                <article class="project-card">
+                    <div class="card-image-placeholder">Project Visual 2</div>
+                    <div class="card-content">
+                        <h3>UI/UX Layout Concepts</h3>
+                        <p>Minimalist wireframes and interactive interface prototypes designed for user experience.</p>
+                        <a href="#" class="project-link">View Details &rarr;</a>
+                    </div>
+                </article>
+
+                <!-- CARD 3 -->
+                <article class="project-card">
+                    <div class="card-image-placeholder">Project Visual 3</div>
+                    <div class="card-content">
+                        <h3>IT Fundamentals Showcase</h3>
+                        <p>Documentation and practical assignments covering core information technology topics.</p>
+                        <a href="#" class="project-link">View Details &rarr;</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact & Socials Section -->
+        <section id="contact" class="contact-section">
+            <h2>Let's Connect</h2>
+            <p>Feel free to reach out for inquiries, collaborations, or simply to stay in touch!</p>
+            <button id="contact-btn">Send Message</button>
+
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="https://instagram.com/neeshyn_" target="_blank" rel="noopener noreferrer" class="social-link">Instagram (@neeshyn_)</a>
+                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link">Facebook (SHEEN MAGDAYAO)</a>
+            </div>
         </section>
     </main>
 
-
+    <!-- Footer -->
     <footer>
-        <!-- Dynamic Target 3: Year Injection -->
-        <p>&copy; <span id="year"></span> All Rights Reserved.</p>
+        <p>&copy; <span id="year"></span> Sheen Frances C. Magdayao (BSIT-1A). All rights reserved.</p>
     </footer>
 
+</body>
+</html>
 
 </body>
 
